@@ -34,27 +34,3 @@ class DPR(nn.Module):
         cls = self.projection(cls)
         cls = self.tanh(cls)
         return cls
-
-    def training_step(self, data, batch_idx):
-        # training_step defines the train loop.
-        # it is independent of forward
-        query = data['queries']
-        query_attentions = data["queries_attention"]
-        pos_passages = data['pos_passages']
-        pos_passages_attentions = data['pos_passages_attention']
-
-        # Process queries #
-        cls_query = self(query, query_attentions)
-        cls_query_dist = SyncFunction.apply(cls_query)
-
-        # Process relevant document #
-        cls_pos_passages = self(pos_passages, pos_passages_attentions)
-        cls_pos_passages_dist = SyncFunction.apply(cls_pos_passages)
-
-        # Compute loss #
-        loss = self.rank_loss(cls_query_dist, cls_pos_passages_dist)
-
-        self.training_step_outputs.append(loss.clone().detach().cpu())
-        self.log("loss", loss)
-        return loss
-
