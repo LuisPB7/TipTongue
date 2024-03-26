@@ -35,11 +35,8 @@
 This is the process for collecting the data. We recommend instead downloading the data already processed into three folders:
 
 - DATA (contains ToT queries, query titles, qrels): https://mega.nz/file/QpBCxRZA#9Z6Q3AH2kB2c3jqMfjUx2SGcS3u12ZEc1wBvkpSLsMs
-- WIKIPEDIA (contains Wikipedia documents, Wiki titles): https://mega.nz/file/Ytg1nTDC#cZ5_2Keys_bNMwXq_UY00TZMYzOJPca6MP7C79hNMSY
-- TREC (Specific TREC ToT queries and Wikipedia split): https://mega.nz/file/cw4FzIxY#HeGKOXEzbgYP80_R3elA5nu5rinHj0p1OTXZ4ATN1oA
-
-
-
+- WIKIPEDIA (contains Wikipedia documents, Wiki titles): https://mega.nz/file/cw4FzIxY#HeGKOXEzbgYP80_R3elA5nu5rinHj0p1OTXZ4ATN1oA
+- TREC (Specific TREC ToT queries and Wikipedia split): https://mega.nz/file/Ytg1nTDC#cZ5_2Keys_bNMwXq_UY00TZMYzOJPca6MP7C79hNMSY
 
 
 
