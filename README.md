@@ -40,7 +40,7 @@ This is the process for collecting the data. We recommend instead downloading th
 
 **Second step: Training DPR on the collected data**
 
-```sh DPR/script.sh``` will train a DPR model with every domain, and evaluate on a certain domain. Do look at the command line arguments to change these options.
+```sh DPR/script.sh``` will train a DPR model with every domain, and evaluate on a certain domain. Do look at the command line arguments to change these options. The link to download the weights is inside the DPR folder.
 
 
 
