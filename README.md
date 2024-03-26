@@ -42,6 +42,8 @@ This is the process for collecting the data. We recommend instead downloading th
 
 ```sh DPR/script.sh``` will train a DPR model with every domain, and evaluate on a certain domain. Do look at the command line arguments to change these options. The link to download the weights is inside the DPR folder.
 
+**November 2023 TREC Participation**
 
+The folder ```TREC_Participation``` contains the dataset, code, and DPR weights for the TREC participation, submitted in August of 2023 and presented in November of 2023. The 2023 TREC ToT task differs from the SIGIR paper task. For example, TREC only evaluates on the movie domain, with its own 150 TREC queries. The TREC DPR model was only trained on movie queries. The methodology to obtain the training dataset was the same, although there are some differences in the dataset. For TREC, there is no test split, since that was given by the organizers. Additionally, the process of keeping/discarding movie queries was less strict, resulting in more movie queries for training (around 84k). We recommend using the methods and data from the SIGIR article instead.
 
 
