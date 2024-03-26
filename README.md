@@ -38,6 +38,10 @@ This is the process for collecting the data. We recommend instead downloading th
 - WIKIPEDIA (contains Wikipedia documents, Wiki titles): https://mega.nz/file/cw4FzIxY#HeGKOXEzbgYP80_R3elA5nu5rinHj0p1OTXZ4ATN1oA
 - TREC (Specific TREC ToT queries and Wikipedia split): https://mega.nz/file/Ytg1nTDC#cZ5_2Keys_bNMwXq_UY00TZMYzOJPca6MP7C79hNMSY
 
+**Second step: Training DPR on the collected data**
+
+```sh DPR/script.sh``` will train a DPR model with every domain, and evaluate on a certain domain. Do look at the command line arguments to change these options.
+
 
 
 
