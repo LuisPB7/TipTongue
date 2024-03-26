@@ -32,7 +32,7 @@
 
 ```python3 SCRIPTS/process_qrels.py```
 
-This is the process for collecting the data. We recommend instead downloading the data already processed into three folders:
+This is the process for collecting the data. We recommend instead downloading the data already processed into these three folders. These files are already human filtered (i.e., the testing queries).
 
 - DATA (contains ToT queries, query titles, qrels): https://mega.nz/file/QpBCxRZA#9Z6Q3AH2kB2c3jqMfjUx2SGcS3u12ZEc1wBvkpSLsMs
 - WIKIPEDIA (contains Wikipedia documents, Wiki titles): https://mega.nz/file/cw4FzIxY#HeGKOXEzbgYP80_R3elA5nu5rinHj0p1OTXZ4ATN1oA
