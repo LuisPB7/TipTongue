@@ -1,4 +1,4 @@
-# Generalizable Tip-of-the-Tongue Retrieval with LLM Re-ranking
+# Code and data for the SIGIR '24 paper "Generalizable Tip-of-the-Tongue Retrieval with LLM Re-ranking"
 
 **First step: Collecting data**
 
