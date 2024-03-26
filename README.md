@@ -1,4 +1,4 @@
-# Tip-of-the-Tongue
+# Generalizable Tip-of-the-Tongue Retrieval with LLM Re-ranking
 
 **First step: Collecting data**
 
