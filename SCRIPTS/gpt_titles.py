@@ -2,7 +2,7 @@
 
 import pickle
 import openai
-openai.api_key = "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"
+openai.api_key = ""
 from difflib import get_close_matches
 
 model_name = "gpt-3.5-turbo"
