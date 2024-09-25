@@ -48,6 +48,7 @@ def load_qrels(qrels_path: str):
 
 
 def run_bm25(
+    corpus_path: str,
     index_path: str,
     queries_path: str,
     titles_path: str,
@@ -55,7 +56,7 @@ def run_bm25(
     domain: str = "",
     results_dir: Optional[str] = None,
 ):
-    index_ref = create_index(index_path)
+    index_ref = create_index(corpus_path, index_path)
     queries = load_queries(queries_path, titles_path)
     qrels = load_qrels(qrels_path)
 
@@ -89,6 +90,7 @@ def run_bm25(
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
+    parser.add_argument("--corpus_path", type=str, required=True, help="Path to the corpus")
     parser.add_argument("--index_path", type=str, required=True, help="Path to save the index")
     parser.add_argument("--queries_path", type=str, required=True, help="Path to the queries, should be a pickled dictionary of qid -> query")
     parser.add_argument("--titles_path", type=str, required=True, help="Path to the titles, should be a pickled dictionary of qid -> title")
@@ -99,6 +101,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     results = run_bm25(
+        corpus_path=args.corpus_path,
         index_path=args.index_path,
         queries_path=args.queries_path,
         titles_path=args.titles_path,
